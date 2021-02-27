@@ -2,7 +2,7 @@ const express = require("express");
 const Users = require("./users-model");
 const router = express.Router();
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
   Users.find()
     .then((user) => {
       res.status(200).json(user);
