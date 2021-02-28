@@ -29,15 +29,11 @@ This is a simple API built for Hertz technical assessment.
 ## Routes
 
 
-| Description |Route | Method |
-
+|     Description           |Route                         |    Method                     |
 |----------------|-------------------------------|-----------------------------|
-
-|Retrieves all submitted users| `/api/users` |**GET** |
-
-|Returns `{userRegistered: true/false}` | `/api/users/:userId` |**GET** |
-
-|Creates a new user, expects payload of `{userId: 12345}` | `/api/users/:userId` |**POST** |
+|Retrieves all submitted users| `/api/users`           |**GET**           |
+|Returns `{userRegistered: true/false}` |`/api/users/:userId`            |**GET**   
+|Creates a new user, expects payload of `{userId: 12345}`        |`/api/users`|**POST**|
 
 
 ## Problems/solutions encoutered
