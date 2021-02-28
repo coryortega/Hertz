@@ -1,4 +1,3 @@
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 module.exports = {
   development: {
@@ -38,9 +37,10 @@ module.exports = {
 
   production: {
     client: "pg",
-    connection: process.env.DATABASE_URL,
-    // ssl: { rejectUnauthorized: false },
-    ssl: false,
+    connection: {
+      connectionString: process.env.DATABASE_URL,
+      ssl: false
+    },
     migrations: {
       directory: "./database/migrations"
     },
