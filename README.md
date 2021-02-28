@@ -2,6 +2,8 @@
 
 This is a simple API built for Hertz technical assessment.
 
+Hosted url:
+https://hertz-assessment.herokuapp.com
 
 ## Setup
 
